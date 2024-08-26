@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC_TAC_TAO</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="mum">
+        <label><input placeholder="player-name1" id="player1"></label>
+        <label><input placeholder="player-name2" id="player2"></label>  <button class="hj" onclick="playgame()">PLAY GAME</button>
+     </div>
+     <h2 id="show_win"></h2>
+    
+      <div  id="flex_condent">
+      <div>
+        <h3 id="playername1" class="pn"></h3>
+        <h3 id="turn1">---</h3>
+        <h3 id="player1sc"></h3>
+      </div>
+
+      <div id="kdr">
+        <button class="kd" data-cell-index="1" onclick="place(0)"></button>
+        <button class="kd" data-cell-index="2" onclick="place(1)"></button>
+        <button class="kd"  data-cell-index="3" onclick="place(2)"></button>
+        <button class="kd" data-cell-index="4" onclick="place(3)"></button>
+        <button class="kd" data-cell-index="5" onclick="place(4)"></button>
+        <button class="kd" data-cell-index="6" onclick="place(5)"></button>
+        <button  class="kd" data-cell-index="7" onclick="place(6)"></button>
+        <button class="kd" data-cell-index="8" onclick="place(7)"></button>
+        <button class="kd" data-cell-index="9" onclick="place(8)"></button>
+      </div>
+      <div>
+    <h3 id="playername2" class="pn"></h3>
+    <h3 id="turn2">---</h3>
+
+  </div>
+
+  </div>
+    <div><button class="hj" onclick="reset()" id="hide">REMATCH</button></div> 
+
+  <script src="./SScript.js"></script>
+ 
+</body>
+</html>
